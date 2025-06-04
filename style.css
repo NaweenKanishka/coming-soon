@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: outfit;
+    font-family: 'Outfit', sans-serif;
 }
 body{
     background-color: black;
@@ -35,17 +35,30 @@ body{
     color: white;
     font-size: 19px;
 }
+main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 .coming{
     width: 1440px;
-    height: 1024px;
+    height: 800px;
+    margin: auto;
 }
 main h1, p{
     color: white;
 }
+main p{
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 40px;
+}
+main h1{
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 200px;
+}
 main .coming{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
 }
