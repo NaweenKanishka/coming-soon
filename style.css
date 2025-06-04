@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: outfit;
+}
+body{
+    background-color: black;
 }
 .header-contents{
-    background-color: black;
+    background-color: rgba(28, 28, 28, 1);
     height: 74px;
     width: 925px;
     justify-content: center;
@@ -17,7 +21,31 @@
     list-style: none;
     display: flex;
     align-items: center;
+    gap: 40px;
 }
 .header-contents ul li{
-    justify-content: space-around;
+    background-color: rgba(51, 51, 51, 1);
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+}
+.header-contents ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+.coming{
+    width: 1440px;
+    height: 1024px;
+}
+main h1, p{
+    color: white;
+}
+main .coming{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
