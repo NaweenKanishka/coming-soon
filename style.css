@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-contents{
+    background-color: black;
+    height: 74px;
+    width: 925px;
+    justify-content: center;
+    margin: auto;
+    border-radius: 58px;
+    margin-top: 40px;
+    display: flex;
+}
+.header-contents ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.header-contents ul li{
+    justify-content: space-around;
+}
