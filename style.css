@@ -108,7 +108,7 @@ main ul li{
 .lpro-text{
     width: 50%;
 }
-.lpro-text h1, .lpro-tools h1{
+.lpro-text h1, .lpro-tools h1, .tools h1{
     color: white;
     font-size: 50px;
 }
@@ -116,4 +116,9 @@ main ul li{
     color: white;
     font-size: 30px;
     margin: 20px 0;
+}
+.tools{
+    width: 1080px;
+    height: 1024px;
+    margin: auto;
 }
