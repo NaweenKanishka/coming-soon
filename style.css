@@ -41,14 +41,17 @@ main{
     display: flex;
 }
 .coming{
+    justify-content: center;
+    display: flex;
+    align-items: center;
     width: 1440px;
-    height: 800px;
+    height: 850px;
     margin: auto;
 }
 main h1, p{
     color: white;
 }
-main p{
+main .name{
     font-family: 'Protest Revolution', sans-serif;
     font-size: 40px;
 }
@@ -61,4 +64,27 @@ main .coming{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+}
+main p{
+    max-width: 950px;
+    letter-spacing: 1.5px;
+}
+main button{
+    width: 267px;
+    height: 53px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: 'Outfit', sans-serif;
+}
+main ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0 20px 0;
+    gap: 20px;
+}
+main ul li{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
 }
