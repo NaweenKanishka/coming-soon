@@ -133,17 +133,22 @@ main ul li{
     width: 200px;
     height: 200px;
     background-color: white;
+    border-radius: 20px;
 }
 .tools-images{
     display: flex;
     gap: 20px;
     margin: 40px 0;
 }
+.what-i-do{
+    margin: 50px 0 0 0;
+}
 .what-i-do p{
     margin: 0 0 20px 0;
 }
 .what-i-do-images{
     display: flex;
+    width: 500px;
 }
 .what-i-do-images h2{
     color: white;
@@ -161,6 +166,7 @@ main ul li{
     height: 250px;
     background-color: white;
     margin: 0 10px 0 0;
+    border-radius: 20px;
 }
 .fk{
     display: flex;
@@ -172,4 +178,47 @@ main ul li{
     font-size: 17px;
     border: none;
     margin: 10px 0 0 0;
+}
+.all-services{
+    max-width: 1080px;
+    height: 1024px;
+    margin: auto;
+}
+.fkk{
+    display: flex;
+    max-width: 1080px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about-us{
+    max-width: 1080px;
+    height: 1024px;
+    margin: auto;
+}
+.about-us-images{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.abimg{
+    height: 593px;
+    width: 455px;
+    border-radius: 20px;
+    background-color: white;
+}
+.social-media{
+    margin: 50px 0 0 0;
+}
+.social-media ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.social-media ul li a{
+    text-decoration: none;
+}
+.abimg-txt{
+    color: white;
+    margin: 20px 0 0 10px;
+    font-size: 30px;
 }
