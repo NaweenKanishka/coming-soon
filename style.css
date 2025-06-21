@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
-body{
-    background: linear-gradient(135deg, #2c0000, #062500);
+
+body {
+    background: black;
 }
+
 .notmoving {
     height: 100px;
     width: 100px;
@@ -20,206 +22,277 @@ body{
     justify-content: center;
     overflow: hidden;
     transition: 0.52s;
-    
+
 }
-.notmoving img{
+
+.notmoving img {
     width: 100%;
     height: 100%;
     transition: 0.5s;
 }
-.notmoving img:hover{
+
+.notmoving img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-.notmoving:hover{
+
+.notmoving:hover {
     background-color: rgb(0, 255, 64);
 }
 
-.header-contents{
-    background-color: rgba(28, 28, 28, 1);
-    height: 74px;
-    width: 925px;
-    justify-content: center;
+.brand-name {
+    color: rgb(255, 255, 255);
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 30px;
+}
+
+.header-contents {
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    height: 70px;
+    width: 1000px;
     margin: auto;
-    border-radius: 58px;
-    margin: 40px auto 0 auto;
     display: flex;
 }
-.header-contents ul{
+
+.header-contents ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 40px;
 }
-.header-contents ul li{
-    background-color: rgba(51, 51, 51, 1);
+
+.header-contents ul li {
     padding: 10px;
-    border-radius: 20px;
-    width: 100px;
     text-align: center;
 }
-.header-contents ul li a{
+
+.header-contents ul li a {
     text-decoration: none;
     color: white;
-    font-size: 19px;
-}
-.coming{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    width: 1440px;
-    height: 979px;
-    margin: auto;
-}
-.coming ul li{
-    height: 300px;
-    width: 200px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 15px;
     transition: 0.5s;
 }
-.coming ul a{
-    text-decoration: none;
+.header-contents ul li a:hover {
+    color: rgb(179, 179, 179);
 }
-.coming ul li img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+.coming {
+    width: 1080px;
+    height: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-.coming ul li:hover{
-    background-color: darkorange;
-    color: white;
-    scale: 1.1;
+
+.developing {
+    margin: 100px auto 0 auto;
+    padding: 10px 40px;
+    border: 1px solid rgb(90, 86, 86);
+    border-radius: 60px;
 }
-main{
+
+.developing span {
+    background-color: blue;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.developing-text {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.developing-text2 {
+    margin: 20px auto;
+}
+
+.developing-text2 p {
+    font-size: 20px;
+    color: rgb(90, 86, 86);
+    font-weight: bold;
+}
+
+.developing-text p {
+    font-size: 40px;
+}
+.developing-button{
+    margin: 20px 0;
+}
+
+.developing-button button {
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    transition: 0.5s;
+    display: flex;
+    gap: 10px;
+}
+.developing-button button:hover{
+    font-size: 17px;
+}
+.developing-button button img{
+    height: 20px;
+}
+
+.developing-image-video {
+    margin: 30px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Remove transition and hover scaling */
+    /* Add animation */
+    animation: scaleOutJump 10s ease-in-out infinite;
+}
+
+@keyframes scaleOutJump {
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    81%, 100% {
+        transform: scale(1);
+    }
+}
+
+.my-video {
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+main {
     width: 100%;
     height: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
-main h1, p{
+
+main h1,
+p {
     color: white;
 }
-main .name{
+
+main .name {
     font-family: 'Protest Revolution', sans-serif;
     font-size: 20px;
     margin: 10px 0 0 0;
 }
-main h1{
+
+main h1 {
     font-family: 'Protest Revolution', sans-serif;
     font-size: 200px;
 }
-main .coming{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-main p{
+
+main p {
     max-width: 950px;
     letter-spacing: 1.5px;
 }
-main button{
-    width: 200px;
-    height: 30px;
-    border-radius: 30px;
-    font-size: 20px;
-    font-family: 'Outfit', sans-serif;
-    transition: 0.5s;
-    border: none;
-    /*margin: 300px 0 0 0;*/
-}
-main button:hover{
-    background-color: darkorange;
-    color: white;
-    cursor: pointer;
-}
-main ul{
+
+main ul {
     display: flex;
     list-style: none;
     margin: 20px 0 20px 0;
     gap: 20px;
 }
-main ul li{
+
+main ul li {
     background-color: white;
     color: black;
     padding: 10px;
     border-radius: 15px;
 }
-.latestprojects{
+
+.latestprojects {
     width: 1080px;
     height: 1024px;
     margin: auto;
 }
-.latestprojects p span{
+
+.latestprojects p span {
     background-color: green;
     padding: 10px 20px;
     border-radius: 30px;
 }
-.lpro{
+
+.lpro {
     display: flex;
     margin: 30px 0;
 }
-.lpro-image{
+
+.lpro-image {
     width: 500px;
     height: 600px;
     background-color: rgba(51, 51, 51, 1);
     border-radius: 30px;
     margin-right: 20px;
 }
-.lpro-image img{
+
+.lpro-image img {
     width: 100%;
     height: 100%;
     border-radius: 30px;
     object-fit: cover;
 }
-.lpro-text{
+
+.lpro-text {
     width: 50%;
 }
-.lpro-text h1, .lpro-tools h1, .tools h1{
+
+.lpro-text h1,
+.lpro-tools h1,
+.tools h1 {
     color: white;
     font-size: 50px;
 }
-.lpro-text h2{
+
+.lpro-text h2 {
     color: white;
     font-size: 30px;
     margin: 20px 0;
 }
-.tools{
+
+.tools {
     width: 1080px;
     height: 1024px;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
-.tools-content{
+
+.tools-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.images{
+
+.images {
     width: 200px;
     height: 200px;
     background-color: white;
     border-radius: 20px;
 }
-.tools-images{
+
+.tools-images {
     display: flex;
     gap: 20px;
     margin: 40px 0;
 }
-.tools-images .images img{
+
+.tools-images .images img {
     width: 100%;
     height: 100%;
     padding: 30px;
     object-fit: cover;
 }
-.what-i-do{
+
+.what-i-do {
     margin: 50px;
     display: flex;
     flex-direction: column;
@@ -227,34 +300,41 @@ main ul li{
     align-items: center;
 
 }
-.what-i-do p{
+
+.what-i-do p {
     margin: 0 0 20px 0;
 }
-.what-i-do-images{
+
+.what-i-do-images {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 500px;
 }
-.what-i-do-images h2{
+
+.what-i-do-images h2 {
     color: white;
 }
-.what-i-do-images p{
+
+.what-i-do-images p {
     width: 250px;
     margin: 10px 0 20px 0;
 }
-.what-i-do-images-content{
+
+.what-i-do-images-content {
     display: flex;
     margin: 20px 0;
 }
-.imagess{
+
+.imagess {
     width: 200px;
     height: 250px;
     background-color: white;
     margin: 0 10px 0 0;
     border-radius: 20px;
 }
-.fk{
+
+.fk {
     display: flex;
     margin: auto;
     justify-content: center;
@@ -262,25 +342,29 @@ main ul li{
     gap: 20px;
     width: 1080px;
 }
-.what-i-do-images-content button{
+
+.what-i-do-images-content button {
     width: 190px;
     height: 28px;
     font-size: 17px;
     border: none;
     margin: 10px 0 0 0;
 }
-.all-services{
+
+.all-services {
     max-width: 1440px;
     height: 1024px;
     margin: auto;
 }
-.fkk{
+
+.fkk {
     display: flex;
     max-width: 1440px;
     justify-content: center;
     flex-wrap: wrap;
 }
-.about-us{
+
+.about-us {
     max-width: 1440px;
     height: 1024px;
     margin: auto;
@@ -289,34 +373,41 @@ main ul li{
     justify-content: center;
     align-items: center;
 }
-.about-us-images{
+
+.about-us-images {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-.abimg{
+
+.abimg {
     height: 593px;
     width: 455px;
     border-radius: 20px;
     background-color: white;
 }
-.social-media{
+
+.social-media {
     margin: 50px 0 0 0;
 }
-.social-media ul{
+
+.social-media ul {
     list-style: none;
     display: flex;
     justify-content: center;
 }
-.social-media ul li a{
+
+.social-media ul li a {
     text-decoration: none;
 }
-.abimg-txt{
+
+.abimg-txt {
     color: white;
-    margin: 20px 0 0 10px;
+    margin: 20px 0 0 0;
     font-size: 30px;
 }
-.contacts{
+
+.contacts {
     max-width: 1080px;
     height: 1024px;
     margin: auto;
@@ -324,12 +415,15 @@ main ul li{
     flex-direction: column;
     align-items: center;
 }
-.contact-form h1, .contact-info h1{
+
+.contact-form h1,
+.contact-info h1 {
     color: white;
     margin-bottom: 20px;
     font-size: 40px;
 }
-.contact-form form{
+
+.contact-form form {
     background-color: grey;
     padding: 20px;
     border-radius: 10px;
@@ -338,45 +432,65 @@ main ul li{
     display: flex;
     flex-direction: column;
 }
-.contact-form form input{
+
+.contact-form form input {
     width: 563px;
     height: 52px;
     border-radius: 13px;
-    border:none;
+    border: none;
     padding: 0 10px;
     margin: 0 auto 10px auto;
 }
-.contact-form form textarea{
+
+.contact-form form textarea {
     width: 563px;
     height: 159px;
     border-radius: 13px;
-    border:none;
+    border: none;
     padding: 0 10px;
     margin: 0 auto 10px auto;
 }
-.contact-form form button{
+
+.contact-form form button {
     width: 563px;
     height: 52px;
     border-radius: 13px;
-    border:none;
+    border: none;
     background-color: black;
     color: white;
     font-size: 20px;
     cursor: pointer;
     margin: 0 auto 10px auto;
 }
-.contact-info{
+
+.contact-form form textarea {
+    padding: 10px;
+}
+
+.contact-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
 }
-.contact-info ul{
+
+.contact-info ul {
     display: flex;
     flex-direction: column;
 }
-footer{
+
+.abimg {
+    overflow: hidden;
+}
+
+.abimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
     background-color: rgba(28, 28, 28, 1);
     height: 51px;
     width: 100%;
